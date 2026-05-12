@@ -179,7 +179,7 @@ const Home = ({ onOpenZhiZhu, onOpenPrd }) => {
                 </div>
               </div>
               <p className={styles.text19}>人工审核，细节把控</p>
-              <div className={styles.frame16} onClick={() => window.open('https://github.com/846496079-design/Chatbot/releases/download/v1.0/PRD.md', '_blank')}>
+              <div className={styles.frame16} onClick={() => window.open(process.env.REACT_APP_PRD_URL || 'https://github.com/846496079-design/Chatbot/releases/download/v1.0/PRD.md', '_blank')}>
                 <p className={styles.dowNload}>DOWNLOAD</p>
                 <img
                   src={iconxa1viis}
