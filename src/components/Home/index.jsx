@@ -20,6 +20,13 @@ const Home = ({ onOpenZhiZhu, onOpenPrd }) => {
     backgroundImage: `url(${portraitImage})`,
   };
 
+  const handleScrollToDemo = () => {
+    const demoElement = document.querySelector(`.${styles.demo}`);
+    if (demoElement) {
+      demoElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className={styles.frame23}>
       <div className={styles.main}>
@@ -54,7 +61,7 @@ const Home = ({ onOpenZhiZhu, onOpenPrd }) => {
                 <p className={styles.text4}>项目管理</p>
               </div>
             </div>
-            <div className={styles.button} onClick={onOpenZhiZhu}>
+            <div className={styles.button} onClick={handleScrollToDemo}>
               <div className={styles.buttonShadow}>
                 <p className={styles.text5}>查看作品</p>
               </div>
