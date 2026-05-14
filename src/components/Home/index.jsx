@@ -211,6 +211,7 @@ const Home = ({ onOpenZhiZhu, onOpenPrd }) => {
                   <path d="M10 6V11" stroke="#e74c3c" strokeWidth="1.5" strokeLinecap="round" />
                   <circle cx="10" cy="14" r="0.75" fill="#e74c3c" />
                 </svg>
+                <span className={styles.noticeText}>使用前请阅读</span>
                 <div className={styles.noticeTooltip}>
                   <p>由于Demo后端部署采用Render服务</p>
                   <p>Render 免费服务有 15 分钟无请求会休眠的机制</p>
